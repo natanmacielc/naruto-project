@@ -4,10 +4,6 @@
   cursor: pointer;
 }
 
-.form-fields {
-  font-family: "Segoe UI", serif;
-}
-
 label, input {
   display: inline-block;
   font-size: 2vh;
@@ -73,7 +69,6 @@ button {
   font-weight: bold;
   margin: 1vh auto;
   border-radius: 0.7vw;
-  font-family: "Segoe UI", serif;
   background-color: rgb(35, 134, 54);
   border-color: rgba(255, 255, 255, 0.1);
   border-width: 0.1vw;
