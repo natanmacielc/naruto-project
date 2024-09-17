@@ -1,0 +1,153 @@
+@import '../../styles/variables';
+
+.close-button {
+  cursor: pointer;
+}
+
+.form-fields {
+  font-family: "Segoe UI", serif;
+}
+
+label, input {
+  display: inline-block;
+  font-size: 2vh;
+  width: 85%;
+  margin-bottom: 1vh;
+  &.dark-mode {
+    color: $text-color-dark
+  }
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6vh;
+  @media only screen and (max-width: 1900px) {
+    margin-bottom: 10vh;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 8vh;
+    margin-top: 8vh;
+  }
+}
+
+input {
+  border-radius: 0.5vw;
+  border-width: 0.1vw;
+  padding: 1vh 1.1vw;
+  border-style: solid;
+  width: 95%;
+  @media only screen and (max-width: 1024px) {
+    border-radius: 0.8vw;
+  }
+  @media only screen and (max-width: 480px) {
+    border-radius: 1vw;
+  }
+
+  &.dark-mode {
+    background-color: black;
+  }
+}
+
+input:focus-visible {
+  outline: none;
+  border-color: $accent-color;
+}
+
+.input-label {
+  line-height: 2vh;
+}
+
+button {
+  color: white;
+  width: 100%;
+  padding: 0.5vh;
+  font-size: 0.8vw;
+  font-weight: bold;
+  margin: 1vh auto;
+  border-radius: 0.7vw;
+  font-family: "Segoe UI", serif;
+  background-color: rgb(35, 134, 54);
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 0.1vw;
+  border-style: solid;
+  @media only screen and (max-width: 1024px) {
+    font-size: 2.5vw;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.accent-text {
+  color: #007bff;
+  cursor: pointer;
+}
+
+p {
+  font-size: 2vh;
+  text-align: center;
+  margin: 0;
+}
+
+.submit {
+  display: flex;
+  width: 100%;
+}
+
+.main-content {
+  margin: 2vh auto auto;
+  width: 100%;
+}
+
+.op-container {
+  margin: 1vh auto auto;
+  border-radius: 0.5vw;
+  padding: 0.9vw;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.71);
+  border-style: solid;
+  border-width: 0.05vw;
+  box-shadow: none;
+  &.dark-mode {
+    border-color: rgba(128, 128, 128, 0.3);
+  }
+  width: 40%;
+  @media only screen and (max-width: 1024px) {
+    width: 60%;
+    border-radius: 1vw;
+    padding: 3vw;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 70%;
+    border-radius: 2vw;
+    padding: 3vw;
+  }
+
+  &.error-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.09);
+    border-color: rgba(255, 0, 0, 0.39);
+    border-style: solid;
+  }
+}
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

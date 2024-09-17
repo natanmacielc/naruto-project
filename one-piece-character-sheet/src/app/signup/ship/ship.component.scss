@@ -1,0 +1,172 @@
+@keyframes  shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  flex-grow: 1;
+
+  .waves {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 10vh; /* Ajusta a altura da área das ondas */
+
+    .wave {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%; /* A onda também ocupará 100% da largura da section */
+      height: 10vh;
+      background: url("../../../assets/images/wave.png");
+      background-size: 100vw 10vh;
+    }
+  }
+}
+
+#wave1, #wave2, #wave3, #wave4, #wave5, #wave6, #wave7, #wave8, #wave9, #wave10, #wave11, #wave12, #wave13, #wave14 {
+  position: absolute; /* Mantém as ondas posicionadas na parte inferior */
+  width: 100%;
+}
+
+#wave1 {
+  opacity: 1;
+  bottom: -4vh;
+  z-index: 1000;
+  animation: animate 4s linear infinite;
+}
+
+#wave2 {
+  opacity: 1;
+  bottom: -3vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave3 {
+  opacity: 1;
+  bottom: -2vh;
+  z-index: 998;
+  animation: animate 4s linear infinite;
+}
+
+#wave4 {
+  opacity: 1;
+  bottom: -1vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave5 {
+  opacity: 1;
+  bottom: 0;
+  z-index: 1000;
+  animation: animate 4s linear infinite;
+}
+
+#wave6 {
+  opacity: 1;
+  bottom: 1vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave7 {
+  opacity: 1;
+  bottom: 2vh;
+  z-index: 998;
+  animation: animate 4s linear infinite;
+}
+
+#wave8 {
+  opacity: 1;
+  bottom: 3vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave9 {
+  opacity: 1;
+  bottom: 4vh;
+  z-index: 1000;
+  animation: animate 4s linear infinite;
+}
+
+#wave10 {
+  opacity: 1;
+  bottom: 5vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave11 {
+  opacity: 0.7;
+  bottom: 6vh;
+  z-index: 998;
+  animation: animate 4s linear infinite;
+}
+
+#wave12 {
+  opacity: 0.5;
+  bottom: 7vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+#wave13 {
+  opacity: 0.5;
+  bottom: 8.5vh;
+  z-index: 998;
+  animation: animate 4s linear infinite;
+}
+
+#wave14 {
+  opacity: 0.1;
+  bottom: 10vh;
+  z-index: 999;
+  animation: animate-reverse 5s linear infinite;
+}
+
+.ship {
+  position: relative;
+  display: block;
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+  animation: shake 4s ease-in-out infinite;
+  @media only screen and (max-width: 1024px) {
+    max-width: 30%;
+  }
+  @media only screen and (max-width: 480px) {
+    max-width: 40%;
+  }
+  &.dark-mode {
+    background-color: transparent;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 100vw;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100vw;
+  }
+}

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: untitled-front-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: untitled-front
+  template:
+    metadata:
+      labels:
+        app: untitled-front
+    spec:
+      containers:
+        - name: untitled-front-container
+          image: 324555808373.dkr.ecr.sa-east-1.amazonaws.com/nat-project:untitled-front
+          ports:
+            - containerPort: 4200
+      imagePullSecrets:
+        - name: regcred

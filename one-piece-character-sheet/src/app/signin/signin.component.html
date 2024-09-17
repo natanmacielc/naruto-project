@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="header-image">
+  <app-sun-warrior></app-sun-warrior>
+</div>
+<div class="main-content">
+  <app-op-container *ngIf="errorMessage !== ''" class="op-container error-message">
+    <p>{{errorMessage}}</p>
+    <img class="close-button" ngSrc="assets/icons/close-icon.svg" height="24" width="24" (click)="closeErrorMessage()">
+  </app-op-container>
+  <app-op-container class="op-container">
+    <form class="form-fields" [formGroup]="signInForm">
+      <div class="input-label">
+        <label for="email">Endereço de email</label>
+        <input id="email" type="text" formControlName="email" required>
+      </div>
+      <div class="input-label">
+        <label for="password">Senha</label>
+        <input id="password" type="password" formControlName="password" required>
+      </div>
+    </form>
+    <div class="submit">
+      <button [ngClass]="{'loading': isLoading}" (click)="signIn()">{{buttonText}}</button>
+    </div>
+  </app-op-container>
+  <app-op-container class="op-container">
+    <p>Novo aqui? <span class="accent-text" (click)="toSignUp()">Crie uma conta</span></p>
+  </app-op-container>
+</div>
+<app-footer></app-footer>

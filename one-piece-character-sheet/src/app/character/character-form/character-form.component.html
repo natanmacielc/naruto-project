@@ -1,0 +1,123 @@
+<form  [formGroup]="characterForm" (ngSubmit)="submitForm()">
+  <label for="name">Nome</label>
+  <input id="name" formControlName="name" placeholder="Digite o nome do personagem" required>
+
+  <label for="birthdate">Data de Nascimento</label>
+  <mat-form-field appearance="fill">
+    <input id="birthdate" formControlName="birthdate" matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <label for="affiliation">Afiliação</label>
+  <select id="affiliation" formControlName="affiliation" required>
+    <option value="Straw Hat Pirates">Pirata</option>
+    <option value="Marines">Marinha</option>
+    <option value="Revolutionary Army">Exército Revolucionário</option>
+    <option value="Other">Outro</option>
+  </select>
+
+  <label for="devil-fruit">Akuma no Mi</label>
+  <select id="devil-fruit" formControlName="devilFruit" required>
+    <option value="Gomu Gomu no Mi">Gomu Gomu no Mi</option>
+    <option value="Bara Bara no Mi">Bara Bara no Mi</option>
+    <option value="Sube Sube no Mi">Sube Sube no Mi</option>
+    <option value="Bomu Bomu no Mi">Bomu Bomu no Mi</option>
+    <option value="Kilo Kilo no Mi">Kilo Kilo no Mi</option>
+    <option value="Hana Hana no Mi">Hana Hana no Mi</option>
+    <option value="Doru Doru no Mi">Doru Doru no Mi</option>
+    <option value="Baku Baku no Mi">Baku Baku no Mi</option>
+    <option value="Mane Mane no Mi">Mane Mane no Mi</option>
+    <option value="Supa Supa no Mi">Supa Supa no Mi</option>
+    <option value="Toge Toge no Mi">Toge Toge no Mi</option>
+    <option value="Ori Ori no Mi">Ori Ori no Mi</option>
+    <option value="Bane Bane no Mi">Bane Bane no Mi</option>
+    <option value="Ito Ito no Mi">Ito Ito no Mi</option>
+    <option value="Noro Noro no Mi">Noro Noro no Mi</option>
+    <option value="Doa Doa no Mi">Doa Doa no Mi</option>
+    <option value="Awa Awa no Mi">Awa Awa no Mi</option>
+    <option value="Beri Beri no Mi">Beri Beri no Mi</option>
+    <option value="Sabi Sabi no Mi">Sabi Sabi no Mi</option>
+    <option value="Shari Shari no Mi">Shari Shari no Mi</option>
+    <option value="Horo Horo no Mi">Horo Horo no Mi</option>
+    <option value="Yomi Yomi no Mi">Yomi Yomi no Mi</option>
+    <option value="Kage Kage no Mi">Kage Kage no Mi</option>
+    <option value="Suke Suke no Mi">Suke Suke no Mi</option>
+    <option value="Nikyu Nikyu no Mi">Nikyu Nikyu no Mi</option>
+    <option value="Toshi Toshi no Mi">Toshi Toshi no Mi</option>
+    <option value="Jiki Jiki no Mi">Jiki Jiki no Mi</option>
+    <option value="Ope Ope no Mi">Ope Ope no Mi</option>
+    <option value="Shiro Shiro no Mi">Shiro Shiro no Mi</option>
+    <option value="Wara Wara no Mi">Wara Wara no Mi</option>
+    <option value="Oto Oto no Mi">Oto Oto no Mi</option>
+    <option value="Mero Mero no Mi">Mero Mero no Mi</option>
+    <option value="Doku Doku no Mi">Doku Doku no Mi</option>
+    <option value="Horu Horu no Mi">Horu Horu no Mi</option>
+    <option value="Choki Choki no Mi">Choki Choki no Mi</option>
+    <option value="Gura Gura no Mi">Gura Gura no Mi</option>
+    <option value="Kira Kira no Mi">Kira Kira no Mi</option>
+    <option value="Poke Poke no Mi">Poke Poke no Mi</option>
+    <option value="Woshu Woshu no Mi">Woshu Woshu no Mi</option>
+    <option value="Fuwa Fuwa no Mi">Fuwa Fuwa no Mi</option>
+    <option value="Deka Deka no Mi">Deka Deka no Mi</option>
+    <option value="Mato Mato no Mi">Mato Mato no Mi</option>
+    <option value="Fuku Fuku no Mi">Fuku Fuku no Mi</option>
+    <option value="Hobi Hobi no Mi">Hobi Hobi no Mi</option>
+    <option value="Buki Buki no Mi">Buki Buki no Mi</option>
+    <option value="Guru Guru no Mi">Guru Guru no Mi</option>
+    <option value="Beta Beta no Mi">Beta Beta no Mi</option>
+    <option value="Zushi Zushi no Mi">Zushi Zushi no Mi</option>
+    <option value="Bari Bari no Mi">Bari Bari no Mi</option>
+    <option value="Nui Nui no Mi">Nui Nui no Mi</option>
+    <option value="Giro Giro no Mi">Giro Giro no Mi</option>
+    <option value="Ato Ato no Mi">Ato Ato no Mi</option>
+    <option value="Jake Jake no Mi">Jake Jake no Mi</option>
+    <option value="Pamu Pamu no Mi">Pamu Pamu no Mi</option>
+    <option value="Sui Sui no Mi">Sui Sui no Mi</option>
+    <option value="Ton Ton no Mi">Ton Ton no Mi</option>
+    <option value="Hira Hira no Mi">Hira Hira no Mi</option>
+    <option value="Ishi Ishi no Mi">Ishi Ishi no Mi</option>
+    <option value="Fude Fude no Mi">Fude Fude no Mi</option>
+    <option value="Nagi Nagi no Mi">Nagi Nagi no Mi</option>
+    <option value="Chiyu Chiyu no Mi">Chiyu Chiyu no Mi</option>
+    <option value="Maki Maki no Mi">Maki Maki no Mi</option>
+    <option value="Soru Soru no Mi">Soru Soru no Mi</option>
+    <option value="Mira Mira no Mi">Mira Mira no Mi</option>
+    <option value="Pero Pero no Mi">Pero Pero no Mi</option>
+    <option value="Bisu Bisu no Mi">Bisu Bisu no Mi</option>
+    <option value="Bata Bata no Mi">Bata Bata no Mi</option>
+    <option value="Buku Buku no Mi">Buku Buku no Mi</option>
+    <option value="Kuri Kuri no Mi">Kuri Kuri no Mi</option>
+    <option value="Shibo Shibo no Mi">Shibo Shibo no Mi</option>
+    <option value="Memo Memo no Mi">Memo Memo no Mi</option>
+    <option value="Mochi Mochi no Mi">Mochi Mochi no Mi</option>
+    <option value="Hoya Hoya no Mi">Hoya Hoya no Mi</option>
+    <option value="Netsu Netsu no Mi">Netsu Netsu no Mi</option>
+    <option value="Kuku Kuku no Mi">Kuku Kuku no Mi</option>
+    <option value="Gocha Gocha no Mi">Gocha Gocha no Mi</option>
+    <option value="Oshi Oshi no Mi">Oshi Oshi no Mi</option>
+    <option value="Kobu Kobu no Mi">Kobu Kobu no Mi</option>
+    <option value="Kibi Kibi no Mi">Kibi Kibi no Mi</option>
+    <option value="Toki Toki no Mi">Toki Toki no Mi</option>
+    <option value="Juku Juku no Mi">Juku Juku no Mi</option>
+    <option value="Shiku Shiku no Mi">Shiku Shiku no Mi</option>
+    <option value="Wapu Wapu no Mi">Wapu Wapu no Mi</option>
+    <option value="Riki Riki no Mi">Riki Riki no Mi</option>
+    <option value="Nomi Nomi no Mi">Nomi Nomi no Mi</option>
+    <option value="Shima Shima no Mi">Shima Shima no Mi</option>
+    <option value="Gabu Gabu no Mi">Gabu Gabu no Mi</option>
+    <option value="Muchi Muchi no Mi">Muchi Muchi no Mi</option>
+    <option value="Nori Nori no Mi">Nori Nori no Mi</option>
+  </select>
+
+  <label for="abilities">Habilidades Únicas</label>
+  <textarea id="abilities" formControlName="abilities" rows="4" placeholder="Descreva a habilidade única do personagem..."></textarea>
+
+  <label for="bounty">Recompensa</label>
+  <input id="bounty" type="number" formControlName="bounty" placeholder="Digite a recompensa">
+
+  <label for="bio">Biografia</label>
+  <textarea id="bio" formControlName="bio" rows="6" placeholder="Escreva uma breve biografia do personagem..."></textarea>
+
+  <button type="submit">Criar</button>
+</form>

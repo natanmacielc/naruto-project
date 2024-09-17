@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Ajuste a imagem</h1>
+<div mat-dialog-content>
+  <image-cropper class="custom-cropper"
+    [backgroundColor]="themeToggle.isDarkMode ? '#1c1c1c' : '#f0f0f0'"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="data.width / data.height"
+    [resizeToHeight]="data.height"
+    [resizeToWidth]="data.width"
+    [onlyScaleDown]="true"
+    [imageFile]="data.image"
+    (imageCropped)="imageCropped($event)"
+  ></image-cropper>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">Cancelar</button>
+  <button mat-button [mat-dialog-close]="result()" cdkFocusInitial>
+    Salvar
+  </button>
+</div>

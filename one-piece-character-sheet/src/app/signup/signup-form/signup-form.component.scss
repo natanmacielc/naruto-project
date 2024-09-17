@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('../../../assets/fonts/BreeSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$form-accent-color: #0072cf;
+
+.container {
+  margin-top: 5vh;
+  width: 50%;
+  display: block;
+  justify-content: start;
+  background-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 20vh;
+  padding: 2vw;
+  &.dark-mode {
+    background-color: rgba(0, 0, 0, 0.24);
+  }
+
+  @media only screen and (max-width: 1090px) {
+    padding: 2vw;
+    margin-bottom: auto;
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 3vw;
+    margin-bottom: auto;
+    width: 80%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+app-typing-effect {
+  white-space: pre-line;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 1vh;
+}
+
+input {
+  width: 80%;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 1.5vw;
+  font-family: "Bree Serif", serif;
+  font-size: 1vw;
+  padding: 0.2vw;
+  height: 2.5vh;
+  margin-top: 0.5vh;
+  @media only screen and (max-width: 1091px) {
+    font-size: 1.5vw;
+    padding: 1vw;
+    height: 1vh;
+    margin-top: auto;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+  :focus-visible {
+    outline: none;
+    border: 0.2vw solid $form-accent-color;
+    box-shadow: 0 0 0.5vw $form-accent-color;
+  }
+  &.dark-mode {
+    color: rgba(255, 255, 255, 0.74);
+  }
+}
+
+:focus-visible {
+  outline: none;
+  border: 0.2vw solid $form-accent-color;
+  box-shadow: 0 0 0.5vw $form-accent-color;
+}
+
+.continue {
+  color: white;
+  font-weight: normal;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  margin: 2vh auto 0;
+  border-radius: 0.7vw;
+  width: 50%;
+  border: 0.15vw solid white;
+  background-color: transparent;
+  font-size: 1vw;
+  @media only screen and (max-width: 1080px) {
+    font-size: 2vw;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &.enabled {
+    opacity: 1;
+    color: green;
+    border-color: green;
+  }
+}
+
+label {
+  margin-top: 1vh;
+  color: $form-accent-color;
+}
+
+.input {
+  display: flex;
+}
+
+.arrow-input {
+  margin-top: auto;
+  margin-right: 0.5vw;
+  margin-bottom: auto;
+}
+
+.visibility {
+  margin: 2%;
+}
+
+.arrow-input.invalid::after {
+  display: inline-block;
+  color: $form-accent-color;
+  overflow: hidden;
+  font-size: 1.5vw;
+  min-width: 38.4px;
+  margin: auto;
+  content: '→';
+  @media only screen and (max-width: 1024px) {
+    font-size: 2vw;
+    min-width: 20.4px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 3vw;
+    min-width: 20.4px;
+  }
+}
+
+.error-message {
+  margin: 1vh auto;
+  width: 80%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow-input.valid::after {
+  content: '✓';
+  display: inline-block;
+  color: $form-accent-color;
+  font-size: 1.5vw;
+  min-width: 38.4px;
+  overflow: hidden;
+  margin: auto;
+  @media only screen and (max-width: 1024px) {
+    font-size: 2vw;
+    min-width: 20.4px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 3vw;
+    min-width: 20.4px;
+  }
+}
+
+:host {
+  ::ng-deep div {
+    background-color: transparent;
+    font-family: 'Bree Serif', serif;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.74);
+    @media only screen and (max-width: 1091px) {
+      font-size: 2vw;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 4vw;
+    }
+  }
+
+  ::ng-deep div .dark-mode {
+    background-color: transparent;
+  }
+}

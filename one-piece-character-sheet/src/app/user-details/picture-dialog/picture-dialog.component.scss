@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+:host {
+  ::ng-deep.ngx-ic-cropper {
+    border-radius: 50%;
+  }
+  ::ng-deep.ngx-ic-overlay {
+    --cropper-overlay-color: $background-color-dark;
+  }
+}
+
+h1 {
+  font-size: 2vw;
+  color: $text-color-light;
+  &.dark-mode {
+    color: $text-color-dark
+  }
+}
+

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: untitled-front
+    ports:
+      - "4200:4200"
+    environment:
+      - NODE_ENV=production
