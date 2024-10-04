@@ -1,0 +1,41 @@
+@import '../../../styles/variables';
+
+button {
+  color: $text-color-light;
+  font-weight: normal;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  margin: 2vh auto 0;
+  border-radius: 0.7vw;
+  width: 50%;
+  border: 0.15vw solid $text-color-light;
+  background-color: transparent;
+  font-size: 1vw;
+  @media only screen and (max-width: 1080px) {
+    font-size: 2vw;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 4vw;
+  }
+
+  &.dark-mode {
+    border: 0.15vw solid $text-color-dark;
+    color: $text-color-dark;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &.enabled {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

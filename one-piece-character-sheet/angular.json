@@ -36,7 +36,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles/styles.scss",
-              "node_modules/ngx-spinner/animations/ball-scale-ripple.css",
+              "node_modules/ngx-spinner/animations/ball-scale-ripple.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",

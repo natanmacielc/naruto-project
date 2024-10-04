@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div class="page-wrapper">
+  <app-title [displayText]="'Habilidades'"></app-title>
+  <app-op-container>
+    <form [formGroup]="skillsForm">
+      <div class="select-wrapper">
+        <app-select [options]="devilFruitOptions()" formControlName="devilFruit"></app-select>
+      </div>
+      <div class="select-wrapper">
+        <app-select [options]="fightingStyleOptions()" formControlName="fightingStyle"></app-select>
+      </div>
+      <div class="select-wrapper">
+        <app-select [options]="classOptions()" formControlName="class"></app-select>
+      </div>
+      <app-button (onclick)="onSubmit()" [buttonText]="'Próximo'" [disabled]="skillsForm.invalid"></app-button>
+    </form>
+  </app-op-container>
+</div>
+<app-footer></app-footer>

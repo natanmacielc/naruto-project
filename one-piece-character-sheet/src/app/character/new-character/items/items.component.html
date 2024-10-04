@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="page-wrapper">
+  <app-title [displayText]="'Itens'"></app-title>
+  <app-op-container>
+    <form [formGroup]="itemsForm">
+      <div class="select-wrapper">
+        <app-select [options]="weaponOptions()" formControlName="weapon"></app-select>
+      </div>
+      <div class="select-wrapper">
+        <app-select [options]="shipOptions()" formControlName="ship"></app-select>
+      </div>
+      <app-button (onclick)="onSubmit()" [buttonText]="'Próximo'" [disabled]="itemsForm.invalid"></app-button>
+    </form>
+  </app-op-container>
+</div>
+<app-footer></app-footer>

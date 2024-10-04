@@ -48,6 +48,12 @@ body {
   }
 }
 
+div, span, p, label {
+  user-select: none;
+  outline: none;
+  cursor: default;
+}
+
 .mat-mdc-dialog-surface {
   background-color: $background-color-light;
   &.dark-mode {

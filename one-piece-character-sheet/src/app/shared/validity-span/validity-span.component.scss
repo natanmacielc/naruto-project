@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+
+$form-accent-color: #4ccf00;
+
+.arrow-input {
+  margin-top: auto;
+  margin-left: 0.5vw;
+  margin-bottom: auto;
+}
+
+.arrow-input.invalid::after {
+  display: inline-block;
+  color: $text-color-light;
+  overflow: hidden;
+  font-size: 1.5vw;
+  min-width: 38.4px;
+  margin: auto;
+  content: '←';
+  @media only screen and (max-width: 1024px) {
+    font-size: 2vw;
+    min-width: 20.4px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 3vw;
+    min-width: 20.4px;
+  }
+}
+
+.arrow-input.invalid.dark-mode::after {
+  color: $text-color-dark;
+}
+
+.arrow-input.valid::after {
+  content: '✓';
+  display: inline-block;
+  color: $form-accent-color;
+  font-size: 1.5vw;
+  min-width: 38.4px;
+  overflow: hidden;
+  margin: auto;
+  @media only screen and (max-width: 1024px) {
+    font-size: 2vw;
+    min-width: 20.4px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 3vw;
+    min-width: 20.4px;
+  }
+}

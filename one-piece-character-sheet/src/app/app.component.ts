@@ -1,15 +1,15 @@
 import {AfterViewChecked, ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
 import {NavigationEnd, NavigationStart, Router, RouterModule, RouterOutlet} from '@angular/router';
-import {CharacterSheetComponent} from "./character/character-sheet/character-sheet.component";
 import {HeaderComponent} from "./shared/header/header.component";
 import {ThemeToggleService} from "./service/theme-toggle/theme-toggle.service";
 import {NikaLoaderComponent} from "./shared/nika-loader/nika-loader.component";
 import {NikaLoaderService} from "./shared/nika-loader/nika-loader.service";
+import {OpFormComponent} from "./shared/op-form/op-form.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CharacterSheetComponent, HeaderComponent, RouterModule, NikaLoaderComponent],
+  imports: [RouterOutlet, HeaderComponent, RouterModule, NikaLoaderComponent, OpFormComponent],
   providers: [Router],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
 
   ngOnInit(): void {
     this.applyThemeChanges();
-    this._router.navigate(['starting']);
+    this._router.navigate(['new-character', 'basic-info']);
   }
 
   applyThemeChanges(): void {

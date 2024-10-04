@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.custom-select {
+  font-family: "Bree Serif", serif;
+  min-width: 100%;
+  border-radius: 0.5vw;
+  border-width: 0.1vw;
+  padding: 0.8vh 0.5vw;
+  border-style: solid;
+  &.dark-mode {
+    color: $text-color-dark;
+    background-color: black;
+  }
+}
+
+:host {
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+<div class="textarea-wrapper">
+  <label [for]="index">{{capitalizeName()}}</label>
+  <div style="display: inline-flex; width: 100%">
+    <textarea [id]="index" [value]="value" (input)="onInputChange($event)" (blur)="onTouched()"></textarea>
+    <ng-content></ng-content>
+  </div>
+</div>

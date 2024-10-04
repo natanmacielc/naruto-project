@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-title [displayText]="'Informações Básicas'"></app-title>
+<app-op-container>
+  <app-picture-container [defaultImage]="'assets/images/add-photo.jpg'"></app-picture-container>
+  <app-op-form [formFields]="basicInfoFields">
+    <div class="button-wrapper">
+      <app-button (onclick)="onSubmit()" [buttonText]="'Próximo'"></app-button>
+    </div>
+  </app-op-form>
+</app-op-container>
+<app-footer></app-footer>

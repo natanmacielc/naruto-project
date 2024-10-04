@@ -1,0 +1,26 @@
+<form [formGroup]="opForm">
+  <div formArrayName="fields">
+    <ng-container *ngFor="let field of formFields; let i = index">
+      <div *ngIf="shouldShowField(i)">
+        <div *ngIf="field.type === 'input'" class="warning-message-wrapper">
+          <app-input (keydown)="field.keydown ? field.keydown($event) : null" [name]="field.name" [formControlName]="i">
+            <app-validity-span [valid]="formArray.controls[i].valid"></app-validity-span>
+          </app-input>
+          <p *ngIf="formArray.controls[i].invalid" class="warning-message">{{field.warningMessage}}</p>
+        </div>
+        <div *ngIf="field.type === 'select'" class="select-wrapper">
+          <app-select (change)="onSelectChange($event, field.change)" [options]="getOptions(i)" [formControlName]="i"></app-select>
+        </div>
+        <div *ngIf="field.type === 'textarea'" class="warning-message-wrapper">
+          <app-textarea [name]="field.name" [formControlName]="i">
+            <app-validity-span [valid]="formArray.controls[i].valid"></app-validity-span>
+          </app-textarea>
+          <p *ngIf="formArray.controls[i].invalid" class="warning-message">{{field.warningMessage}}</p>
+        </div>
+      </div>
+      <div *ngIf="opForm.valid">
+        <ng-content></ng-content>
+      </div>
+    </ng-container>
+  </div>
+</form>

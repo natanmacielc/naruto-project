@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+label, textarea {
+  display: inline-block;
+  font-family: "Bree Serif", serif;
+  font-size: 2vh;
+  margin-bottom: 1vh;
+  width: 97%;
+  &.dark-mode {
+    color: $text-color-dark
+  }
+}
+
+textarea {
+  margin: auto;
+  height: 10vh;
+  border-radius: 0.5vw;
+  border-width: 0.1vw;
+  padding: 0.5vh 0.5vw;
+  border-style: solid;
+  @media only screen and (max-width: 1024px) {
+    border-radius: 0.8vw;
+  }
+  @media only screen and (max-width: 480px) {
+    border-radius: 1vw;
+  }
+
+  &.dark-mode {
+    background-color: black;
+  }
+}
+
+textarea:focus-visible {
+  outline: none;
+  border-color: $accent-color;
+}
+
+.textarea-wrapper {
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 1.5vh;
+  }
+}

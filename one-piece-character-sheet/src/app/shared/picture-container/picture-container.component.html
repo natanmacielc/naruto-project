@@ -1,0 +1,23 @@
+<div class="picture-container">
+  <div class="image-wrapper">
+    <img class="character-picture" #characterpicture [src]="actualImage" (error)="imageFetchError()" />
+  </div>
+  <div class="action-btn">
+    <button class="btn-icon" (click)="toggleMenu()">
+      <img src="assets/icons/edit.svg" alt="Menu Icon" class="icon-dark" height="30" width="30" />
+      <img src="assets/icons/edit-dark.svg" alt="Menu Icon" class="icon-light" height="30" width="30" />
+    </button>
+    <ul class="dropdown-menu" *ngIf="menuOpen">
+      <input
+        id="input-image"
+        #inputField
+        hidden
+        type="file"
+        (change)="fileSelected($event)"
+        (click)="inputField.value = ''"
+      />
+      <li (click)="inputField.click()">Carregar foto</li>
+      <li *ngIf="actualImage !== defaultImage" (click)="removeProfilePicture()">Remover foto</li>
+    </ul>
+  </div>
+</div>
