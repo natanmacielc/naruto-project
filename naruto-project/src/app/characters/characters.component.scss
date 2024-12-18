@@ -1,0 +1,88 @@
+@import '../../styles/variables';
+
+@font-face {
+  font-family: 'Naruto Project';
+  src: url('../../assets/fonts/njnaruto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('../../assets/fonts/BreeSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  ::ng-deep.mat-mdc-select-min-line {
+    color: $text-color-light;
+    &.dark-mode {
+      color: $text-color-dark;
+    }
+  }
+}
+
+.main-content {
+  height: 100%;
+  padding: 2px;
+  line-height: 2vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+th {
+  font-family: "Bree Serif", serif;
+  font-weight: bold;
+}
+
+td {
+  font-family: "Bree Serif", serif;
+  font-weight: bold;
+  &.c-rank {
+    background-color: #43cea2;
+    color: $text-color-light;
+  }
+
+  &.b-rank {
+    background-color: #4568dc;
+    color: $text-color-light;
+  }
+
+  &.a-rank {
+    background-color: #904e95;
+    color: $text-color-light;
+  }
+
+  &.s-rank {
+    background-color: #c94b4b;
+    color: $text-color-light;
+  }
+
+  &.s-plus-rank {
+    color: white;
+    font-family: "Naruto Project", serif;
+    font-weight: bold;
+    background: url("/assets/images/eletric.gif") center/cover no-repeat;
+    filter: brightness(1.2);
+    p {
+      padding: 1vh;
+      display: inline;
+      font-weight: bold;
+      background: linear-gradient(90deg, #7bccfe, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      margin: 0;
+    }
+  }
+}
+
+img {
+  border: 0.3vh solid black;
+}
