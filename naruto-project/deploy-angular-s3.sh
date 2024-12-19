@@ -2,11 +2,11 @@
 
 set -e
 
-S3_BUCKET_NAME="onepiece-project"
+S3_BUCKET_NAME="naruto-project"
 
-BUILD_DIR="./dist/one-piece-character-sheet"
+BUILD_DIR="./dist/naruto-project"
 
-CLOUDFRONT_DISTRIBUTION_ID="E1QHMFFIUBJX34"
+CLOUDFRONT_DISTRIBUTION_ID="E29HENA65TVI42"
 
 echo "Iniciando build da aplicação Angular..."
 npm run build --prod

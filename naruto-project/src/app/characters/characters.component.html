@@ -1,33 +1,58 @@
 <app-user-header></app-user-header>
 <div class="main-content">
-  <div class="mat-elevation-z8" style="width: 80%">
-    <table mat-table [dataSource]="characters">
-      <ng-container matColumnDef="character">
-        <th mat-header-cell *matHeaderCellDef>Personagem</th>
-        <ng-container *matCellDef="let element">
-          <td mat-cell [ngClass]="rankingClass(element.ranking)">
-            <div class="image-wrapper">
-              <img *ngIf="element.ranking == 'S+' && element.image" [src]="element.image" alt="character photo" height="40" width="40">
-              <p>{{element.character}}</p>
-            </div>
+  <div class="search-container">
+    <div class="search-resource">
+      <p>O que você está buscando?</p>
+      <input (input)="search($event)" type="text" placeholder="Digite o nome do personagem ou jogador">
+    </div>
+    <div class="search-resource">
+      <p>Vila</p>
+      <app-select (change)="filterByVillage($event)" [options]="villageOptions">
+      </app-select>
+    </div>
+    <div class="search-resource">
+      <p>Estado</p>
+      <app-select (change)="filterByStatus($event)" [options]="statusOptions">
+      </app-select>
+    </div>
+  </div>
+  <div class="container">
+    <app-title [displayText]="'Lista de Personagens'"></app-title>
+    <table>
+      <thead>
+      <tr>
+        <th (click)="changeCharacterOperator()"><p>Personagem<span class="material-icons unfold">{{characterSortingOperator === 'none' ? 'unfold_more' : characterSortingOperator === 'ascending' ? 'arrow_drop_up' : 'arrow_drop_down'}}</span></p></th>
+        <th (click)="changePlayerOperator()"><p>Jogador<span class="material-icons unfold">{{playerSortingOperator === 'none' ? 'unfold_more' : playerSortingOperator === 'ascending' ? 'arrow_drop_up' : 'arrow_drop_down'}}</span></p></th>
+        <th><p>Ranking</p></th>
+      </tr>
+      </thead>
+      <tbody>
+      <ng-container *ngFor="let character of charactersTable.characters">
+        <tr [ngClass]="rankingClass(character.ranking)">
+          <td [ngClass]="rankingClass(character.ranking)">
+            <p>{{ character.character }}</p>
           </td>
-        </ng-container>
+          <td [ngClass]="rankingClass(character.ranking)">
+            <p>{{ character.player }}</p>
+          </td>
+          <td [ngClass]="rankingClass(character.ranking)">
+            <p style="font-family: 'Naruto Project', serif">{{ character.ranking }}</p>
+          </td>
+        </tr>
       </ng-container>
-      <ng-container matColumnDef="player">
-        <th mat-header-cell *matHeaderCellDef>Jogador</th>
-        <td mat-cell *matCellDef="let element" [ngClass]="rankingClass(element.ranking)"><p>{{element.player}}</p></td>
-      </ng-container>
-      <ng-container matColumnDef="ranking">
-        <th mat-header-cell *matHeaderCellDef>Ranking</th>
-        <td mat-cell *matCellDef="let element" [ngClass]="rankingClass(element.ranking)"><p style="font-family: 'Naruto Project', serif">{{element.ranking}}</p></td>
-      </ng-container>
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </tbody>
     </table>
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
-                   showFirstLastButtons
-                   aria-label="Select page of periodic elements">
-    </mat-paginator>
+    <div class="pagination">
+      <button (click)="previousPage()" *ngIf="actualPage !== 0">
+        <span class="material-icons">arrow_back_ios_new</span>
+      </button>
+      <button (click)="nextPage()" *ngIf="haveMoreCharacters">
+        <span class="material-icons">arrow_forward_ios</span>
+      </button>
+    </div>
   </div>
 </div>
+<div class="content">
+</div>
 <app-footer></app-footer>
+

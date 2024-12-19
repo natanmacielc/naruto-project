@@ -173,6 +173,7 @@ li {
   background-color: rgba(255, 0, 0, 0.37);
   border-color: rgba(255, 0, 0, 0.99);
   border-style: solid;
+  color: $text-color-light;
   &.dark-mode {
     color: $text-color-dark;
   }

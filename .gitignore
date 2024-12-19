@@ -1,5 +1,8 @@
 .DS_STORE
 
+*.sh
+*.yml
+*.yaml
 /dist/
 /bazel-out
 /integration/bazel/bazel-*

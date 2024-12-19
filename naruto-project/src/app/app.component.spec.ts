@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'one-piece-character-sheet' title`, () => {
+  it(`should have the 'naruto-project' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('one-piece-character-sheet');
+    expect(app.title).toEqual('naruto-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, one-piece-character-sheet');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, naruto-project');
   });
 });

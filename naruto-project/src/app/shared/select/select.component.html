@@ -1,4 +1,4 @@
 <select [value]="value" class="custom-select" (change)="updateValue($event)">
-  <option value="selected" hidden>{{options.selector}}</option>
+  <option value="selected" hidden disabled style="display: none">{{options.selector}}</option>
   <option *ngFor="let option of options.options" [selected]="selectValue(option.value)" [value]="option.value">{{option.name}}</option>
 </select>

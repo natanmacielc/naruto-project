@@ -1,5 +1,5 @@
 {
-  "name": "one-piece-character-sheet",
+  "name": "naruto-project",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:one-piece-character-sheet": "node dist/one-piece-character-sheet/server/server.mjs"
+    "serve:ssr:naruto-project": "node dist/naruto-project/server/server.mjs"
   },
   "private": true,
   "dependencies": {

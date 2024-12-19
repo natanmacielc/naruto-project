@@ -1,7 +1,7 @@
 <div class="input-wrapper">
   <label [for]="index">{{capitalizeName()}}</label>
   <div style="display: inline-flex; width: 100%">
-    <input type="text" [id]="index" [value]="value" (input)="onInputChange($event)" (blur)="onTouched()">
+    <input type="text" [id]="index" [value]="value" (input)="onInputChange($event)" (blur)="onTouched()" [placeholder]="placeholder">
     <ng-content></ng-content>
   </div>
 </div>

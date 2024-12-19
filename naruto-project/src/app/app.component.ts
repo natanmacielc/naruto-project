@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
   private readonly _themeToggle: ThemeToggleService = inject<ThemeToggleService>(ThemeToggleService);
   private readonly _cdr: ChangeDetectorRef = inject<ChangeDetectorRef>(ChangeDetectorRef);
   private readonly _loader: NikaLoaderService = inject<NikaLoaderService>(NikaLoaderService);
-  title: string = 'one-piece-character-sheet';
+  title: string = 'naruto-project';
 
   ngOnInit(): void {
     this.applyThemeChanges();

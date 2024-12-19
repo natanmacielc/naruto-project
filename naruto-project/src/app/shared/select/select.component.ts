@@ -38,7 +38,9 @@ export class SelectComponent implements ControlValueAccessor {
     const value: string = selectElement.value;
     this.onChange(value);
     this.onTouched();
-    this.options.control!.setValue(value, {onlySelf: true})
+    if (this.options.control) {
+      this.options.control.setValue(value, {onlySelf: true})
+    }
   }
 
   registerOnChange(fn: any): void {

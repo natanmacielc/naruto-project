@@ -43,5 +43,9 @@ export const routes: Routes = [
     path: 'characters',
     resolve: {resolvedData: charactersResolver},
     loadComponent: () => import('./characters/characters.component').then(m => m.CharactersComponent)
+  },
+  {
+    path: 'catch',
+    loadComponent: () => import('./catch/catch.component').then(m => m.CatchComponent)
   }
 ];

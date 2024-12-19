@@ -4,15 +4,18 @@ label, input {
   display: inline-block;
   font-family: "Bree Serif", serif;
   font-size: 2vh;
-  margin-bottom: 1vh;
+  margin: auto 1vh 0.5vh;
   width: 97%;
   &.dark-mode {
     color: $text-color-dark
   }
+  @media only screen and (max-width: 480px) {
+    font-size: 1.5vh;
+    width: 80%;
+  }
 }
 
 input {
-  margin: auto;
   border-radius: 0.5vw;
   border-width: 0.1vw;
   padding: 0.5vh 0.5vw;

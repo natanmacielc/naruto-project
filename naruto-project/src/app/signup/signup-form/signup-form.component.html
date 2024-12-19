@@ -14,8 +14,10 @@
       <div class="input password">
         <span [ngClass]="inputValidity(isPasswordValid)"></span>
         <input [type]="isPasswordVisible ? 'text' : 'password'" id="password" formControlName="password" required>
-        <img *ngIf="isPasswordVisible" ngSrc="assets/icons/visibility_off.svg" (click)="changeVisibility()" alt="Visibility Off" class="visibility" height="25" width="25">
-        <img *ngIf="!isPasswordVisible" ngSrc="assets/icons/visibility_on.svg" (click)="changeVisibility()" alt="Visibility On" class="visibility" height="25" width="25">
+        <img *ngIf="isPasswordVisible" ngSrc="assets/icons/visibility_off_light.svg" (click)="changeVisibility()" alt="Visibility Off" class="visibility light" height="25" width="25">
+        <img *ngIf="!isPasswordVisible" ngSrc="assets/icons/visibility_on_light.svg" (click)="changeVisibility()" alt="Visibility On" class="visibility light" height="25" width="25">
+        <img *ngIf="isPasswordVisible" ngSrc="assets/icons/visibility_off.svg" (click)="changeVisibility()" alt="Visibility Off" class="visibility dark" height="25" width="25">
+        <img *ngIf="!isPasswordVisible" ngSrc="assets/icons/visibility_on.svg" (click)="changeVisibility()" alt="Visibility On" class="visibility dark" height="25" width="25">
       </div>
       <button class="continue" [ngClass]="displayControl({'displayConditions': [showPasswordContinue, isEmailValid], 'enableConditions': [isPasswordValid]})" type="submit" (click)="enableUsername()" [disabled]="!isPasswordValid">Continuar</button>
     </div>

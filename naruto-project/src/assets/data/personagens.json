@@ -1,91 +1,795 @@
 {
-    "characters": [
-        {"character": "Hashirama", "player": "?", "ranking": "S+", "active": "S", "chooseAt": "", "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf73ff44-6831-44e6-92c7-8b4f8270f264/dhtjskp-cedebc69-f362-48c6-948e-e459c2e684f6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmNzNmZjQ0LTY4MzEtNDRlNi05MmM3LThiNGY4MjcwZjI2NFwvZGh0anNrcC1jZWRlYmM2OS1mMzYyLTQ4YzYtOTQ4ZS1lNDU5YzJlNjg0ZjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hh3Xgi8Fmm7nDoBE47LtcPFaHTpqNUFZycVTSHfRSrk"},
-        {"character": "Madara", "player": "Rosarita", "ranking": "S+", "active": "S", "chooseAt": "12/12/2024", "image": "https://i.pinimg.com/736x/e7/7a/27/e77a27e207c69f52053f670cf1abd12b.jpg"},
-        {"character": "Naruto", "player": "Retsu", "ranking": "S+", "active": "S", "chooseAt": "12/12/2024", "image": "https://i.pinimg.com/736x/d0/72/50/d072507013bc2884c2072a86049834bf.jpg"},
-        {"character": "Sasuke", "player": "Mikoto", "ranking": "S+", "active": "S", "chooseAt": "12/12/2024", "image": "https://i.pinimg.com/736x/33/3f/ba/333fba658fe07c3a6989d12358b94842.jpg"},
-        {"character": "Obito", "player": "Andre Vitor", "ranking": "S+", "active": "S", "chooseAt": "12/12/2024", "image": "https://i.pinimg.com/originals/c3/00/e8/c300e81ff562263465faabd6bfbb2e3f.jpg"},
-        {"character": "Minato", "player": "?", "ranking": "S+", "active": "S", "chooseAt": "", "image": "https://i.pinimg.com/736x/f7/c8/79/f7c8791409da3eeb7485e7dd507e3e86.jpg"},
-        {"character": "Nagato", "player": "Rocco", "ranking": "S+", "active": "S", "chooseAt": "12/12/2024", "image": "https://i.pinimg.com/736x/d4/70/aa/d470aa91aa2a5b0c4e76a986536c2fea.jpg"},
-        {"character": "Itachi", "player": "?", "ranking": "S+", "active": "S", "chooseAt": "", "image": "https://i.pinimg.com/736x/8e/2a/e4/8e2ae47845d6963f3aaf6abe2efbc8ad.jpg"},
-        {"character": "Koji", "player": "Kaien Ryuu", "ranking": "S", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Terceiro Raikage", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Quarto Raikage", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Tobirama", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Shisui", "player": "Boss Gust", "ranking": "S", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Muu", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Konan", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Jiraiya", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Tsunade", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Orochimaru", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Kabuto", "player": "Gabriel Cabral", "ranking": "S", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Danzou", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Guy", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Gengetsu", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Mei", "player": "Miza", "ranking": "S", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Boruto", "player": "Azza", "ranking": "S", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Gaara", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Kakashi", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Hiruzen", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Rasa", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Terceiro Kazekage", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Yagura", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Code", "player": "?", "ranking": "S", "active": "N", "chooseAt": ""},
-        {"character": "Kawaki", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Kisame", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Kakuzu", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Deidara", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Sasori", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Mitsuki", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Boro", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Delta", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Sakura", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Duy", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Hanzou", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Neji", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Bee", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Lee", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Shin", "player": "Sun Ce", "ranking": "A", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Darui", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Kurotsuchi", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Shinki", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Chiyo", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Hidan", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Mitsuki", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Kimimaro", "player": "?", "ranking": "A", "active": "N", "chooseAt": ""},
-        {"character": "Sarada", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Tenten", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Kushina", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Hinata", "player": "Miss", "ranking": "B", "active": "S", "chooseAt": "12/12/2024"},
-        {"character": "Kankuro", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Shikamaru", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Shino", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Izuna", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Yugito", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Jugo", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Choji", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Karin", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Temari", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Ino", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Ginkaku", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Kinkaku", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Chojuro", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Ao", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Himawari", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Hanabi", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Anko", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Kiba", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Suigetsu", "player": "?", "ranking": "B", "active": "N", "chooseAt": ""},
-        {"character": "Chouchou", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Kidoumaru", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Sakon & Ukon", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Tayuya", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Haku", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Mito", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Zabuza", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Rin", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Mizuki", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Amado", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""},
-        {"character": "Inojin", "player": "?", "ranking": "C", "active": "N", "chooseAt": ""}
-    ]
+  "characters": [
+    {
+      "character": "Hashirama",
+      "player": "Mikoto",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf73ff44-6831-44e6-92c7-8b4f8270f264/dhtjskp-cedebc69-f362-48c6-948e-e459c2e684f6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmNzNmZjQ0LTY4MzEtNDRlNi05MmM3LThiNGY4MjcwZjI2NFwvZGh0anNrcC1jZWRlYmM2OS1mMzYyLTQ4YzYtOTQ4ZS1lNDU5YzJlNjg0ZjYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hh3Xgi8Fmm7nDoBE47LtcPFaHTpqNUFZycVTSHfRSrk"
+    },
+    {
+      "character": "Madara",
+      "player": "Rosarita",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Kumo",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/e7/7a/27/e77a27e207c69f52053f670cf1abd12b.jpg"
+    },
+    {
+      "character": "Naruto",
+      "player": "Retsu",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Konoha",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/d0/72/50/d072507013bc2884c2072a86049834bf.jpg"
+    },
+    {
+      "character": "Sasuke",
+      "player": "Sun Ce",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "18/12/2024",
+      "village": "Konoha",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/33/3f/ba/333fba658fe07c3a6989d12358b94842.jpg"
+    },
+    {
+      "character": "Obito",
+      "player": "Andre Vitor",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Suna",
+      "status": "alive",
+      "image": "https://i.pinimg.com/originals/c3/00/e8/c300e81ff562263465faabd6bfbb2e3f.jpg"
+    },
+    {
+      "character": "Minato",
+      "player": "Boss Gust",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/f7/c8/79/f7c8791409da3eeb7485e7dd507e3e86.jpg"
+    },
+    {
+      "character": "Nagato",
+      "player": "Ryuu",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "17/12/2024",
+      "village": "Iwa",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/d4/70/aa/d470aa91aa2a5b0c4e76a986536c2fea.jpg"
+    },
+    {
+      "character": "Itachi",
+      "player": "Rocco",
+      "ranking": "S+",
+      "active": "S",
+      "chooseAt": "13/12/2024",
+      "village": "Ame",
+      "status": "alive",
+      "image": "https://i.pinimg.com/736x/8e/2a/e4/8e2ae47845d6963f3aaf6abe2efbc8ad.jpg"
+    },
+    {
+      "character": "Koji",
+      "player": "?",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Terceiro Raikage",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Quarto Raikage",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Tobirama",
+      "player": "Hanwei Qiang",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "13/12/2024",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Shisui",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Muu",
+      "player": "Whisley",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "13/12/2024",
+      "village": "Iwa",
+      "status": "alive"
+    },
+    {
+      "character": "Konan",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Ame",
+      "status": "alive"
+    },
+    {
+      "character": "Jiraiya",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Tsunade",
+      "player": "Verona",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "13/12/2024",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Orochimaru",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Kabuto",
+      "player": "Gabriel Cabral",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "12/12/2024",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Danzou",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Guy",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Gengetsu",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Mei",
+      "player": "Miza",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Boruto",
+      "player": "Azza",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Gaara",
+      "player": "Ciel",
+      "ranking": "S",
+      "active": "S",
+      "chooseAt": "15/12/2024",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Kakashi",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Hiruzen",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Rasa",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Terceiro Kazekage",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Yagura",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Code",
+      "player": "?",
+      "ranking": "S",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kawaki",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kisame",
+      "player": "Luis Hervey",
+      "ranking": "A",
+      "active": "S",
+      "chooseAt": "18/12/2024",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Kakuzu",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Taki",
+      "status": "alive"
+    },
+    {
+      "character": "Deidara",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Sasori",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Mitsuki",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Boro",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kara",
+      "status": "alive"
+    },
+    {
+      "character": "Delta",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kara",
+      "status": "alive"
+    },
+    {
+      "character": "Sakura",
+      "player": "Gustavo",
+      "ranking": "A",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Duy",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Hanzou",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Ame",
+      "status": "alive"
+    },
+    {
+      "character": "Neji",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Bee",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Lee",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Shin",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "",
+      "status": "alive"
+    },
+    {
+      "character": "Darui",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Kurotsuchi",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Iwa",
+      "status": "alive"
+    },
+    {
+      "character": "Shinki",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Chiyo",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Hidan",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Ame",
+      "status": "alive"
+    },
+    {
+      "character": "Mitsuki",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kimimaro",
+      "player": "?",
+      "ranking": "A",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Sarada",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Tenten",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kushina",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Hinata",
+      "player": "Meikyu",
+      "ranking": "B",
+      "active": "S",
+      "chooseAt": "12/12/2024",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Kankuro",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Shikamaru",
+      "player": "Kazuy",
+      "ranking": "B",
+      "active": "S",
+      "chooseAt": "16/12/2024",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Shino",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Izuna",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Uchiha",
+      "status": "alive"
+    },
+    {
+      "character": "Yugito",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Jugo",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Choji",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Karin",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Temari",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Suna",
+      "status": "alive"
+    },
+    {
+      "character": "Ino",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Ginkaku",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Kinkaku",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kumo",
+      "status": "alive"
+    },
+    {
+      "character": "Chojuro",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Ao",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Himawari",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Hanabi",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Anko",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kiba",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Suigetsu",
+      "player": "?",
+      "ranking": "B",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Chouchou",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Kidoumaru",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Sakon & Ukon",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Tayuya",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Oto",
+      "status": "alive"
+    },
+    {
+      "character": "Haku",
+      "player": "Ametista",
+      "ranking": "C",
+      "active": "S",
+      "chooseAt": "13/12/2024",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Mito",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Zabuza",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Kiri",
+      "status": "alive"
+    },
+    {
+      "character": "Rin",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Mizuki",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Amado",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    },
+    {
+      "character": "Inojin",
+      "player": "?",
+      "ranking": "C",
+      "active": "N",
+      "chooseAt": "",
+      "village": "Konoha",
+      "status": "alive"
+    }
+  ]
 }

@@ -13,6 +13,11 @@
   }
 }
 
+select:focus-visible {
+  outline: none;
+  border-color: $accent-color;
+}
+
 :host {
   width: 100%;
 }

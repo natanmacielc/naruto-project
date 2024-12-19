@@ -95,14 +95,18 @@ input {
 }
 
 .continue {
-  color: white;
+  color: $text-color-light;
+  border: 0.15vw solid $text-color-light;
+  &.dark-mode {
+    color: white;
+    border: 0.15vw solid white;
+  }
   font-weight: normal;
   font-family: "Bree Serif", serif;
   text-align: center;
   margin: 2vh auto 0;
   border-radius: 0.7vw;
   width: 50%;
-  border: 0.15vw solid white;
   background-color: transparent;
   font-size: 1vw;
   @media only screen and (max-width: 1080px) {
@@ -141,6 +145,18 @@ label {
 
 .visibility {
   margin: 2%;
+  &.light {
+    display: block;
+    &.dark-mode {
+      display: none;
+    }
+  }
+  &.dark {
+    display: none;
+    &.dark-mode {
+      display: block;
+    }
+  }
 }
 
 .arrow-input.invalid::after {
@@ -166,7 +182,10 @@ label {
   margin: 1vh auto;
   width: 80%;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5);
+  color: $text-color-light;
+  &.dark-mode {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .arrow-input.valid::after {
