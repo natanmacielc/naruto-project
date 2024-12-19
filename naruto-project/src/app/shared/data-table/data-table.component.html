@@ -1,20 +1,24 @@
-<table>
-  <thead>
-  <tr>
-    <ng-container *ngFor="let column of columns">
-      <th>{{ column }}</th>
-    </ng-container>
-  </tr>
-  </thead>
-  <tbody>
-  <ng-container *ngFor="let element of data">
-    <tr>
-      <ng-container *ngFor="let column of columns">
-        <td>
-          <p>{{ element[column] }}</p>
-        </td>
+<div class="custom-dialog">
+  <div class="dialog-content">
+    <table>
+      <thead>
+      <tr>
+        <ng-container *ngFor="let column of columns">
+          <th>{{ column }}</th>
+        </ng-container>
+      </tr>
+      </thead>
+      <tbody>
+      <ng-container *ngFor="let element of data">
+        <tr>
+          <ng-container *ngFor="let column of columns">
+            <td>
+              <p>{{ element[column] }}</p>
+            </td>
+          </ng-container>
+        </tr>
       </ng-container>
-    </tr>
-  </ng-container>
-  </tbody>
-</table>
+      </tbody>
+    </table>
+  </div>
+</div>

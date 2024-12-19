@@ -21,6 +21,7 @@
     "@angular/material-moment-adapter": "18.2.2",
     "@angular/platform-browser": "^18.2.2",
     "@angular/platform-browser-dynamic": "^18.2.2",
+    "@angular/platform-server": "^18.2.13",
     "@angular/router": "^18.2.2",
     "@angular/ssr": "^18.0.2",
     "@aws-amplify/ui-angular": "^5.0.21",

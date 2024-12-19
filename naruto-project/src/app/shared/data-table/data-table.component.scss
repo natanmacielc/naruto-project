@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.custom-dialog {
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow: hidden;
+  padding: 2vw;
+  @media only screen and (max-width: 1024px) {
+    padding: 3vw;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 4vw;
+  }
+
+  .dialog-content {
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  max-height: 60vh;
+  overflow-y: auto;
+  display: block;
+
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    color: $text-color-light !important;
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+
+  td {
+    word-wrap: break-word;
+  }
+}
